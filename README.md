@@ -1,6 +1,6 @@
 # DeskPRO Metrics
 
-In order to share common customer support metrics, this project is aimed to aid other service providers in appropriate metric tracking for faster issue resolution, agent productivity or system status.
+In order to share common customer support metrics, this project is aimed to aid other service providers who utilise DeskPRO in appropriate metric tracking for faster issue identification and resolution, agent productivity or system status.
 
 
 ## Deployment
