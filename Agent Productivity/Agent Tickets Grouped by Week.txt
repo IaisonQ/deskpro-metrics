@@ -1,0 +1,5 @@
+SELECT DPQL_COUNT() AS 'Total Messages'
+FROM tickets_messages
+WHERE tickets_messages.person.is_agent = 1 AND tickets_messages.is_agent_note = 0
+GROUP BY DPQL_MATRIX(CONCAT('Week ', WEEKOFYEAR(tickets_messages.date_created), ', ', DPQL_YEAR(tickets_messages.date_created)), tickets_messages.person)
+ORDER BY tickets_messages.date_created
