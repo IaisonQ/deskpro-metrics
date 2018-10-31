@@ -1,0 +1,3 @@
+SELECT DPQL_COUNT() AS 'stat_value', IF(DPQL_COUNT() = 1, 'chat created', 'chats created') AS 'stat_description'
+FROM chat_conversations
+WHERE chat_conversations.date_created = ${date}
